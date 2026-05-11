@@ -1,18 +1,19 @@
 ! name: Programming
 ! description: Rerank results to boost content related to programming.
-! public: false
+! public: true
 ! author: voidwalter
 ! avatar: #222222
 
 ! Remove results not matching any other rule
 $discard
 
-$boost=4,site=github.com
-$boost=4,site=en.wikipedia.com
-$boost=4,site=geeksforgeeks.org
-$boost=4,site=cppreference.com
+$boost=3,site=github.com
+$boost=3,site=en.wikipedia.com
+$boost=3,site=geeksforgeeks.org
+$boost=3,site=cppreference.com
 $boost=3,site=blog.rust-lang.org
 $boost=3,site=learn-cpp.org
+$boost=3,site=isocpp.org
 $boost=3,site=hackingcpp.com
 $boost=3,site=fluentcpp.com
 $boost=3,site=cxx.rs
@@ -21,6 +22,8 @@ $boost=3,site=foonathan.net
 $boost=3,site=andreasfertig.info
 $boost=3,site=herbsutter.com
 $boost=3,site=sutter.ca
+$boost=3,site=reddit.com
+
 
 
 ! Exclusion 
