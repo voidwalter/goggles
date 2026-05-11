@@ -1,0 +1,25 @@
+! name: Tech blogs
+! description: Rerank results to boost content on tech, science and math blogs.
+! public: true
+! author: voidwalter
+! avatar: #0044e0
+
+$discard
+$downrank,site=medium.com
+
+$boost=1,site=github.io
+$boost=1,site=micro.blog
+/blog.$boost=1
+/blog/$boost=1
+/engineering.$boost=2
+/science.$boost=2
+/math.$boost=3
+/computer.$boost=3
+/programming.$boost=3
+
+
+$boost=3,site=0x65.dev
+$boost=3,site=0xadada.pub
+$boost=3,site=2ality.com
+$boost=1,site=blog.vaxry.net
+$boost=1,site=notashelf.dev
