@@ -1,0 +1,8 @@
+! name: Programming
+! description: Rerank results to boost content related to programming.
+! public: false
+! author: voidwalter
+! avatar: #222222
+
+! Remove results not matching any other rule
+$discard
